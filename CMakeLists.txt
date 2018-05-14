@@ -48,3 +48,6 @@ include_directories( ${GTSAM_INCLUDE_DIR} )
 ## executable
 add_executable(find_min src/find_min.cpp)
 target_link_libraries(find_min ${CERES_LIBRARIES} )
+
+add_executable(curve_fitting src/curve_fitting.cpp)
+target_link_libraries(curve_fitting ${OpenCV_LIBS} ${CERES_LIBRARIES})
